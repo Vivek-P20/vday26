@@ -1,0 +1,103 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:'Quicksand',sans-serif;
+  overflow:hidden;
+}
+
+/* Korean night background */
+.korean-bg{
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(rgba(0,0,40,.8),rgba(0,0,40,.8)),
+    url("https://images.unsplash.com/photo-1600907052557-4c4fa6bbd0e1");
+  background-size:cover;
+  background-position:center;
+}
+
+/* Floating food + hearts */
+.floating span{
+  position:fixed;
+  font-size:24px;
+  animation:float 7s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(110vh);}
+  to{transform:translateY(-10vh);}
+}
+
+/* Main card */
+.card{
+  position:relative;
+  z-index:2;
+  max-width:90%;
+  margin:20vh auto;
+  background:rgba(255,255,255,.95);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 0 30px rgba(255,120,200,.8);
+}
+
+h1{
+  font-family:'Pacifico',cursive;
+  font-size:38px;
+  color:#ff5fa2;
+}
+
+.subtitle{
+  font-size:18px;
+}
+
+/* Buttons */
+button{
+  width:90%;
+  max-width:250px;
+  margin:10px auto;
+  display:block;
+  padding:15px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  background:#ff5fa2;
+  color:white;
+  box-shadow:0 0 15px rgba(255,100,180,.7);
+}
+
+/* Popups */
+.popup{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  z-index:5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup-box{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  animation:pop .4s ease;
+  width:85%;
+}
+
+@keyframes pop{
+  from{transform:scale(0);}
+  to{transform:scale(1);}
+}
+
+#fireworks{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:4;
+}
