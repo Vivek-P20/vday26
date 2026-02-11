@@ -1,0 +1,10 @@
+const floating = document.querySelector(".floating");
+const items = ["💖","🍜","🧋","🍡","🍓","🍰"];
+
+setInterval(()=>{
+  const s=document.createElement("span");
+  s.innerText = items[Math.floor(Math.random()*items.length)];
+  s.style.left=Math.random()*100+"vw";
+  floating.appendChild(s);
+  setTimeout(()=>s.remove(),7000);
+},500);
