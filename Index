@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Sanya 💕</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<audio id="music" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/10/05/audio_6b6b64f3b7.mp3?filename=romantic-piano-112191.mp3">
+</audio>
+
+<div class="korean-bg"></div>
+
+<div class="floating"></div>
+
+<div class="card">
+  <h1>Sanya 💖</h1>
+  <p class="subtitle">Will you be my Valentine this week? 🌸</p>
+
+  <div class="buttons">
+    <button id="yes">Yes 💕</button>
+    <button id="no">No 😢</button>
+  </div>
+</div>
+
+<!-- Are you sure -->
+<div class="popup" id="surePopup">
+  <div class="popup-box">
+    <h2>💖 Are you sure?</h2>
+    <p>Do you really want to be my Valentine, Sanya?</p>
+    <button id="sureYes1">Yes 💕</button>
+    <button id="sureYes2">Yes 💖</button>
+  </div>
+</div>
+
+<!-- Yes popup -->
+<div class="popup" id="yesPopup">
+  <div class="popup-box">
+    <h2>💖 I Love You Sanya 💖</h2>
+    <p><b>I can’t wait to meet you</b></p>
+    <p><b>You are my best friend and my favorite person 🥰</b></p>
+  </div>
+</div>
+
+<!-- No popup -->
+<div class="popup" id="noPopup">
+  <div class="popup-box">
+    <h2>😢 Aww…</h2>
+    <p>That made me sad 💔</p>
+  </div>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
